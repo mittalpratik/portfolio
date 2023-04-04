@@ -9,6 +9,8 @@ import { SkillsChartComponent } from './skills-chart/skills-chart.component';
 import { MenuComponent } from './menu/menu.component';
 import {MatMenuModule} from "@angular/material/menu";
 import {MatBadgeModule} from "@angular/material/badge";
+import {HighchartsChartModule} from "highcharts-angular";
+import { BubbleChartComponent } from './bubble-chart/bubble-chart.component';
 
 @NgModule({
   declarations: [
@@ -16,13 +18,15 @@ import {MatBadgeModule} from "@angular/material/badge";
     PersonalDetailsComponent,
     AmchartComponent,
     SkillsChartComponent,
-    MenuComponent
+    MenuComponent,
+    BubbleChartComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     MatMenuModule,
-    MatBadgeModule
+    MatBadgeModule,
+    HighchartsChartModule
   ],
   providers: [],
   bootstrap: [AppComponent]
