@@ -7,6 +7,8 @@ import { PersonalDetailsComponent } from './personal-details/personal-details.co
 import { AmchartComponent } from './amchart/amchart.component';
 import { SkillsChartComponent } from './skills-chart/skills-chart.component';
 import { MenuComponent } from './menu/menu.component';
+import {MatMenuModule} from "@angular/material/menu";
+import {MatBadgeModule} from "@angular/material/badge";
 
 @NgModule({
   declarations: [
@@ -18,7 +20,9 @@ import { MenuComponent } from './menu/menu.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    MatMenuModule,
+    MatBadgeModule
   ],
   providers: [],
   bootstrap: [AppComponent]
